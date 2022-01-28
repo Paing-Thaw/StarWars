@@ -1,0 +1,16 @@
+query AllFilms {
+  allFilms {
+    films {
+      id
+      director
+      episodeID
+      title
+      releaseDate
+      characterConnection(first: 10) {
+        characters {
+          name
+        }
+      }
+    }
+  }
+}
